@@ -68,7 +68,11 @@ body {
     }
 }
 
-div#main, div#account, div#account-settings, div#search, div#selected-pic {
+div#main,
+div#account,
+div#account-settings,
+div#search,
+div#selected-pic {
     width: 100vw;
     height: 100vh;
 }
@@ -89,7 +93,7 @@ div.row {
     margin-right: auto;
     width: 80vw;
     height: 80vh;
-    
+
 }
 
 /* Random Image */
@@ -121,7 +125,7 @@ div.col-3 {
 
 /* ~~~Mobile Styles~~~ */
 @media screen and (max-width: 768px) {
-    
+
 
     /* Random Image */
     img#random-pic.img-fluid {
