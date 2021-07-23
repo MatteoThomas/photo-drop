@@ -3,9 +3,12 @@
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="./favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./draftstyles.css" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -18,10 +21,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Charmonman&family=Comfortaa&family=Cutive+Mono&family=Josefin+Sans&family=Luckiest+Guy&family=Pacifico&family=Raleway&display=swap"
         rel="stylesheet">
-    <!-- jQuery -->
+    <!-- jQuery Script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- CSS File -->
-    <link rel="stylesheet" href="./draftstyles.css" />
     <title>Project3Draft</title>
 </head>
 
@@ -40,68 +41,117 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Profile</a>
-                        <a class="nav-link" href="#">Search</a>
-                        <a class="nav-link" href="#">Login/Sign Up</a>
+                        <a class="nav-link active" aria-current="page" href="#main">Home</a>
+                        <a class="nav-link" href="#account">Profile</a>
+                        <a class="nav-link" href="#search">Search</a>
+                        <a class="nav-link" href="#account-settings">Login/Sign Up</a>
                     </div>
                 </div>
             </div>
         </nav>
 
-        <img src="..." class="img-fluid" alt="...">
+    </div>
 
-        <div class="jumbotron">
-            <h1 class="display-4">Photo Drop! </h1>
-            <p class="lead">This is where we can write about our website</p>
-            <hr class="my-4">
-            <p>If we want to seperate anything else from our description, maybe put contact info</p>
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Maybe this can be another login button or maybe
-                </a>
-            </p>
+
+    <!-- Page -->
+    <div id="main">
+        <!-- Main- Random Pic -->
+
+        <div class="row text-center">
+            <img src="https://images.unsplash.com/photo-1471584363844-b3909b58d6f7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3648&q=80"
+                class="img-fluid" id="random-pic" alt="...">
+
+            <div class="jumbotron">
+                <h1 class="display-4">Photo Drop! </h1>
+                <p class="lead">This is where we can write about our website</p>
+                <hr class="my-4">
+                <p>If we want to seperate anything else from our description, maybe put contact info</p>
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Maybe this can be another login button
+                        or
+                        maybe
+                    </a>
+                </p>
+            </div>
         </div>
+
+    </div>
+
+    <!-- Page -->
+    <div id="account">
+
+        <header>
+            <h1>Profile</h1>
+        </header>
+
+
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                <div class="col-3" id="userpicupload">
+                    <h3>Username</h3>
+                    <button type="button" class="btn btn-dark">Upload</button>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Choose File
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <h3>User Image Gallery</h3>
+                </div>
+                <div class="col-3">
+                    <h3>User Bio</h3>
+                    <h5>Profile Pic</h5>
+                    <img src="https://imgr.search.brave.com/TX2HS4lqjp2Zb6Rr0ls5LEFQn4vX-4Ytf53X0SoyUYg/fit/150/150/no/1/aHR0cHM6Ly9pLmlt/Z2ZsaXAuY29tLzIv/ZDB0YjcuanBn"
+                        class="img-thumbnail" alt="...">
+                </div>
+            </div>
+        </div>
+
     </div>
 
 
     <!-- Page -->
-    <div class="main">
+    <div id="account-settings">
+
+        <header>
+            <h1>Login/Logout Account</h1>
+        </header>
 
     </div>
 
 
     <!-- Page -->
-    <div class="account">
+    <div id="search">
+
+        <header>
+            <h1>Search</h1>
+        </header>
 
     </div>
 
 
     <!-- Page -->
-    <div class="account-settings">
-
-    </div>
-
-
-    <!-- Page -->
-    <div class="search">
-
-    </div>
-
-
-    <!-- Page -->
-    <div class="selected-pic">
+    <div id="selected-pic">
 
     </div>
 
 
 
-
+    <footer>
+        &#169 Copyright 2021
+    </footer>
 
 
 
     <!-- jQuery, Popper, Bootstrap Scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">

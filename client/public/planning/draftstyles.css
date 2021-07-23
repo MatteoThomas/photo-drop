@@ -2,10 +2,10 @@
     box-sizing: border-box;
 }
 
+/* Main */
 body {
     background: linear-gradient(124deg, #014250, #4A727D, #3E90A9, #06B2C9, #0BC6C6, #ABB9C0, #BFC9CF);
     background-size: 1800% 1800%;
-
     -webkit-animation: rainbow 18s ease infinite;
     -z-animation: rainbow 18s ease infinite;
     -o-animation: rainbow 18s ease infinite;
@@ -68,11 +68,52 @@ body {
     }
 }
 
-
-nav {
-    background: rgba(74, 114, 125, .9);
+div#main, div#account, div#account-settings, div#search, div#selected-pic {
+    width: 100vw;
+    height: 100vh;
 }
 
+nav {
+    width: 100vw;
+    background: rgba(74, 114, 125, .2);
+}
+
+
+/* ~HOME PAGE~ */
+div.main {
+    /* padding-top: 60px; */
+}
+
+div.row {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    height: 80vh;
+    
+}
+
+/* Random Image */
+img#random-pic.img-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+    height: 70vh;
+}
+
+/* Jumbotron */
+div.jumbotron {
+    width: 100vw;
+    height: fit-content;
+    justify-content: center;
+}
+
+
+/* ~ACCOUNT PAGE~ */
+div.col-3 {
+    height: 70vh;
+    background: rgba(171, 185, 192, 1);
+    margin: 5px;
+}
 
 
 
@@ -80,8 +121,18 @@ nav {
 
 /* ~~~Mobile Styles~~~ */
 @media screen and (max-width: 768px) {
-    body {}
+    
+
+    /* Random Image */
+    img#random-pic.img-fluid {
+        width: auto;
+        height: auto;
+    }
 }
+
+
+
+
 
 
 
