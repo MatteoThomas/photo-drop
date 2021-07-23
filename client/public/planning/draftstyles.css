@@ -3,67 +3,74 @@
 }
 
 body {
-    /* overflow: hidden; */
-    /* animation: pulse 20s infinite; */
+    background: linear-gradient(124deg, #014250, #4A727D, #3E90A9, #06B2C9, #0BC6C6, #ABB9C0, #BFC9CF);
+    background-size: 1800% 1800%;
 
-    background: linear-gradient(124deg,  #2c1b2dff, #f86341ff, #9ec325ff, #4864aaff, #8f51afff, #ff21b6ff);
-background-size: 1800% 1800%;
-
--webkit-animation: rainbow 18s ease infinite;
--z-animation: rainbow 18s ease infinite;
--o-animation: rainbow 18s ease infinite;
-  animation: rainbow 18s ease infinite;}
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
+}
 
 @-webkit-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@-moz-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@-o-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@keyframes rainbow { 
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-
-/* --white: #ffffffff;
---dark-purple: #2c1b2dff;
---orange-soda: #f86341ff;
---android-green: #9ec325ff;
---queen-blue: #4864aaff;
---purple-plum: #8f51afff;
---shocking-pink: #ff21b6ff;
-
-
-/* @keyframes pulse {
     0% {
-        background-color: #2C1B2D;
         background-position: 0% 82%
     }
 
     50% {
-        background-color: #4864AA;
         background-position: 100% 19%
     }
 
     100% {
-        background-color: #8F51AF;
         background-position: 0% 82%
     }
-} */
+}
+
+@-moz-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@-o-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
 
 
 nav {
-    background:  rgba(44, 27, 45, .9);
+    background: rgba(74, 114, 125, .9);
 }
 
 
@@ -73,9 +80,7 @@ nav {
 
 /* ~~~Mobile Styles~~~ */
 @media screen and (max-width: 768px) {
-    body {
-
-    }
+    body {}
 }
 
 
@@ -137,9 +142,8 @@ $gradient-top-right: linear-gradient(45deg, #014250ff, #4a727dff, #3e90a9ff, #06
 $gradient-bottom-right: linear-gradient(135deg, #014250ff, #4a727dff, #3e90a9ff, #06b2c9ff, #0bc6c6ff, #abb9c0ff, #bfc9cfff);
 $gradient-top-left: linear-gradient(225deg, #014250ff, #4a727dff, #3e90a9ff, #06b2c9ff, #0bc6c6ff, #abb9c0ff, #bfc9cfff);
 $gradient-bottom-left: linear-gradient(315deg, #014250ff, #4a727dff, #3e90a9ff, #06b2c9ff, #0bc6c6ff, #abb9c0ff, #bfc9cfff);
-$gradient-radial: radial-gradient(#014250ff, #4a727dff, #3e90a9ff, #06b2c9ff, #0bc6c6ff, #abb9c0ff, #bfc9cfff); */ */
-
-
+$gradient-radial: radial-gradient(#014250ff, #4a727dff, #3e90a9ff, #06b2c9ff, #0bc6c6ff, #abb9c0ff, #bfc9cfff); */
+*/
 /* Idea 2 */
 /* CSS HEX */
 /* --white: #ffffffff;
