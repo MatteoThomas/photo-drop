@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* overflow: hidden; */
+    /* animation: pulse 20s infinite; */
+
+    background: linear-gradient(124deg,  #2c1b2dff, #f86341ff, #9ec325ff, #4864aaff, #8f51afff, #ff21b6ff);
+background-size: 1800% 1800%;
+
+-webkit-animation: rainbow 18s ease infinite;
+-z-animation: rainbow 18s ease infinite;
+-o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+/* --white: #ffffffff;
+--dark-purple: #2c1b2dff;
+--orange-soda: #f86341ff;
+--android-green: #9ec325ff;
+--queen-blue: #4864aaff;
+--purple-plum: #8f51afff;
+--shocking-pink: #ff21b6ff;
+
+
+/* @keyframes pulse {
+    0% {
+        background-color: #2C1B2D;
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-color: #4864AA;
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-color: #8F51AF;
+        background-position: 0% 82%
+    }
+} */
+
+
+nav {
+    background:  rgba(44, 27, 45, .9);
+}
+
+
+
+
+
+
+/* ~~~Mobile Styles~~~ */
+@media screen and (max-width: 768px) {
+    body {
+
+    }
+}
+
+
+
+/* Color: */
+/* Idea 1 */
+
+/* CSS HEX
+--midnight-green-eagle-green: #014250ff;
+--teal-blue: #4a727dff;
+--blue-munsell: #3e90a9ff;
+--pacific-blue: #06b2c9ff;
+--robin-egg-blue: #0bc6c6ff;
+--silver-sand: #abb9c0ff;
+--silver-sand-2: #bfc9cfff;
+
+/* CSS HSL */
+/* --midnight-green-eagle-green: hsla(191, 98%, 16%, 1);
+--teal-blue: hsla(193, 26%, 39%, 1);
+--blue-munsell: hsla(194, 46%, 45%, 1);
+--pacific-blue: hsla(187, 94%, 41%, 1);
+--robin-egg-blue: hsla(180, 89%, 41%, 1);
+--silver-sand: hsla(200, 14%, 71%, 1);
+--silver-sand-2: hsla(203, 14%, 78%, 1); */
+
+/* SCSS HEX */
+/* $midnight-green-eagle-green: #014250ff;
+$teal-blue: #4a727dff;
+$blue-munsell: #3e90a9ff;
+$pacific-blue: #06b2c9ff;
+$robin-egg-blue: #0bc6c6ff;
+$silver-sand: #abb9c0ff;
+$silver-sand-2: #bfc9cfff; */
+
+/* SCSS HSL */
+/* $midnight-green-eagle-green: hsla(191, 98%, 16%, 1);
+$teal-blue: hsla(193, 26%, 39%, 1);
+$blue-munsell: hsla(194, 46%, 45%, 1);
+$pacific-blue: hsla(187, 94%, 41%, 1);
+$robin-egg-blue: hsla(180, 89%, 41%, 1);
+$silver-sand: hsla(200, 14%, 71%, 1);
+$silver-sand-2: hsla(203, 14%, 78%, 1); */
+
+/* SCSS RGB */
+/* $midnight-green-eagle-green: rgba(1, 66, 80, 1);
+$teal-blue: rgba(74, 114, 125, 1);
+$blue-munsell: rgba(62, 144, 169, 1);
+$pacific-blue: rgba(6, 178, 201, 1);
+$robin-egg-blue: rgba(11, 198, 198, 1);
+$silver-sand: rgba(171, 185, 192, 1);
+$silver-sand-2: rgba(191, 201, 207, 1); */
+
+/* SCSS Gradient */
+/* $gradient-top: linear-gradient(0deg, #014250ff, #4a727dff, #3e90a9ff, #06b2c9ff, #0bc6c6ff, #abb9c0ff, #bfc9cfff);
+$gradient-right: linear-gradient(90deg, #014250ff, #4a727dff, #3e90a9ff, #06b2c9ff, #0bc6c6ff, #abb9c0ff, #bfc9cfff);
+$gradient-bottom: linear-gradient(180deg, #014250ff, #4a727dff, #3e90a9ff, #06b2c9ff, #0bc6c6ff, #abb9c0ff, #bfc9cfff);
+$gradient-left: linear-gradient(270deg, #014250ff, #4a727dff, #3e90a9ff, #06b2c9ff, #0bc6c6ff, #abb9c0ff, #bfc9cfff);
+$gradient-top-right: linear-gradient(45deg, #014250ff, #4a727dff, #3e90a9ff, #06b2c9ff, #0bc6c6ff, #abb9c0ff, #bfc9cfff);
+$gradient-bottom-right: linear-gradient(135deg, #014250ff, #4a727dff, #3e90a9ff, #06b2c9ff, #0bc6c6ff, #abb9c0ff, #bfc9cfff);
+$gradient-top-left: linear-gradient(225deg, #014250ff, #4a727dff, #3e90a9ff, #06b2c9ff, #0bc6c6ff, #abb9c0ff, #bfc9cfff);
+$gradient-bottom-left: linear-gradient(315deg, #014250ff, #4a727dff, #3e90a9ff, #06b2c9ff, #0bc6c6ff, #abb9c0ff, #bfc9cfff);
+$gradient-radial: radial-gradient(#014250ff, #4a727dff, #3e90a9ff, #06b2c9ff, #0bc6c6ff, #abb9c0ff, #bfc9cfff); */ */
+
+
+/* Idea 2 */
+/* CSS HEX */
+/* --white: #ffffffff;
+--dark-purple: #2c1b2dff;
+--orange-soda: #f86341ff;
+--android-green: #9ec325ff;
+--queen-blue: #4864aaff;
+--purple-plum: #8f51afff;
+--shocking-pink: #ff21b6ff;
+
+CSS HSL
+--white: hsla(0, 0%, 100%, 1);
+--dark-purple: hsla(297, 25%, 14%, 1);
+--orange-soda: hsla(11, 93%, 61%, 1);
+--android-green: hsla(74, 68%, 45%, 1);
+--queen-blue: hsla(223, 40%, 47%, 1);
+--purple-plum: hsla(280, 37%, 50%, 1);
+--shocking-pink: hsla(320, 100%, 56%, 1);
+
+SCSS HEX
+$white: #ffffffff;
+$dark-purple: #2c1b2dff;
+$orange-soda: #f86341ff;
+$android-green: #9ec325ff;
+$queen-blue: #4864aaff;
+$purple-plum: #8f51afff;
+$shocking-pink: #ff21b6ff;
+
+SCSS HSL
+$white: hsla(0, 0%, 100%, 1);
+$dark-purple: hsla(297, 25%, 14%, 1);
+$orange-soda: hsla(11, 93%, 61%, 1);
+$android-green: hsla(74, 68%, 45%, 1);
+$queen-blue: hsla(223, 40%, 47%, 1);
+$purple-plum: hsla(280, 37%, 50%, 1);
+$shocking-pink: hsla(320, 100%, 56%, 1);
+
+SCSS RGB
+$white: rgba(255, 255, 255, 1);
+$dark-purple: rgba(44, 27, 45, 1);
+$orange-soda: rgba(248, 99, 65, 1);
+$android-green: rgba(158, 195, 37, 1);
+$queen-blue: rgba(72, 100, 170, 1);
+$purple-plum: rgba(143, 81, 175, 1);
+$shocking-pink: rgba(255, 33, 182, 1);
+
+SCSS Gradient
+$gradient-top: linear-gradient(0deg, #ffffffff, #2c1b2dff, #f86341ff, #9ec325ff, #4864aaff, #8f51afff, #ff21b6ff);
+$gradient-right: linear-gradient(90deg, #ffffffff, #2c1b2dff, #f86341ff, #9ec325ff, #4864aaff, #8f51afff, #ff21b6ff);
+$gradient-bottom: linear-gradient(180deg, #ffffffff, #2c1b2dff, #f86341ff, #9ec325ff, #4864aaff, #8f51afff, #ff21b6ff);
+$gradient-left: linear-gradient(270deg, #ffffffff, #2c1b2dff, #f86341ff, #9ec325ff, #4864aaff, #8f51afff, #ff21b6ff);
+$gradient-top-right: linear-gradient(45deg, #ffffffff, #2c1b2dff, #f86341ff, #9ec325ff, #4864aaff, #8f51afff, #ff21b6ff);
+$gradient-bottom-right: linear-gradient(135deg, #ffffffff, #2c1b2dff, #f86341ff, #9ec325ff, #4864aaff, #8f51afff, #ff21b6ff);
+$gradient-top-left: linear-gradient(225deg, #ffffffff, #2c1b2dff, #f86341ff, #9ec325ff, #4864aaff, #8f51afff, #ff21b6ff);
+$gradient-bottom-left: linear-gradient(315deg, #ffffffff, #2c1b2dff, #f86341ff, #9ec325ff, #4864aaff, #8f51afff, #ff21b6ff);
+$gradient-radial: radial-gradient(#ffffffff, #2c1b2dff, #f86341ff, #9ec325ff, #4864aaff, #8f51afff, #ff21b6ff); */
+
+
+/* Idea 3 */
+/* CSS HEX
+--teal: #0e7c7bff;
+--maximum-blue-green: #17bebbff;
+--aero-blue: #d4f4ddff;
+--carmine-m-p: #d62246ff;
+--dark-purple: #4b1d3fff;
+
+CSS HSL
+--teal: hsla(179, 80%, 27%, 1);
+--maximum-blue-green: hsla(179, 78%, 42%, 1);
+--aero-blue: hsla(137, 59%, 89%, 1);
+--carmine-m-p: hsla(348, 73%, 49%, 1);
+--dark-purple: hsla(316, 44%, 20%, 1);
+
+SCSS HEX
+$teal: #0e7c7bff;
+$maximum-blue-green: #17bebbff;
+$aero-blue: #d4f4ddff;
+$carmine-m-p: #d62246ff;
+$dark-purple: #4b1d3fff;
+
+SCSS HSL
+$teal: hsla(179, 80%, 27%, 1);
+$maximum-blue-green: hsla(179, 78%, 42%, 1);
+$aero-blue: hsla(137, 59%, 89%, 1);
+$carmine-m-p: hsla(348, 73%, 49%, 1);
+$dark-purple: hsla(316, 44%, 20%, 1);
+
+SCSS RGB
+$teal: rgba(14, 124, 123, 1);
+$maximum-blue-green: rgba(23, 190, 187, 1);
+$aero-blue: rgba(212, 244, 221, 1);
+$carmine-m-p: rgba(214, 34, 70, 1);
+$dark-purple: rgba(75, 29, 63, 1);
+
+SCSS Gradient
+$gradient-top: linear-gradient(0deg, #0e7c7bff, #17bebbff, #d4f4ddff, #d62246ff, #4b1d3fff);
+$gradient-right: linear-gradient(90deg, #0e7c7bff, #17bebbff, #d4f4ddff, #d62246ff, #4b1d3fff);
+$gradient-bottom: linear-gradient(180deg, #0e7c7bff, #17bebbff, #d4f4ddff, #d62246ff, #4b1d3fff);
+$gradient-left: linear-gradient(270deg, #0e7c7bff, #17bebbff, #d4f4ddff, #d62246ff, #4b1d3fff);
+$gradient-top-right: linear-gradient(45deg, #0e7c7bff, #17bebbff, #d4f4ddff, #d62246ff, #4b1d3fff);
+$gradient-bottom-right: linear-gradient(135deg, #0e7c7bff, #17bebbff, #d4f4ddff, #d62246ff, #4b1d3fff);
+$gradient-top-left: linear-gradient(225deg, #0e7c7bff, #17bebbff, #d4f4ddff, #d62246ff, #4b1d3fff);
+$gradient-bottom-left: linear-gradient(315deg, #0e7c7bff, #17bebbff, #d4f4ddff, #d62246ff, #4b1d3fff);
+$gradient-radial: radial-gradient(#0e7c7bff, #17bebbff, #d4f4ddff, #d62246ff, #4b1d3fff); */
