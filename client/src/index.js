@@ -1,17 +1,36 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// import React from "react";
+import React from "react";
+import ReactDOM from "react-dom";
+// import "./index.css";
+// import App from "./App";
+// // import reportWebVitals from './reportWebVitals';
+
+// import { render } from "react-dom";
+import { createStore, combineReducers } from "redux";
+import { Provider } from "react-redux";
+import App from "./App";
+import PhotosListReducer from "./reducers/PhotosListReducer";
+import UploadedPhotosReducer from "./reducers/UploadedPhotosReducer";
+import config from "./config/config";
+
+const rootReducer = combineReducers({
+  photos: PhotosListReducer,
+  uploadedPhotos: UploadedPhotosReducer,
+});
+
+const store = createStore(rootReducer);
+const { cloud_name, upload_preset } = config;
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <Provider store={store}>
+    <App cloudName={cloud_name} uploadPreset={upload_preset} />
+  </Provider>,
+  document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+//   document.getElementById("root")
+// );
