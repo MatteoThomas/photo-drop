@@ -2,35 +2,52 @@ const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
 
-const productSchema = new Schema({
-  name: {
+const postSchema = new Schema({
+  postId:{
+    type: String,
+    required: true,
+  },
+
+  title: {
     type: String,
     required: true,
     trim: true
   },
-  description: {
-    type: String
+  body: {
+    type: String,
+    max: 50,
   },
+
   image: {
     type: String
   },
-  price: {
-    type: Number,
-    required: true,
-    min: 0.99
-  },
-  quantity: {
-    type: Number,
-    min: 0,
-    default: 0
-  },
+
   category: {
     type: Schema.Types.ObjectId,
     ref: 'Category',
     required: true
-  }
-});
+  },
 
-const Product = mongoose.model('Product', productSchema);
+  likes:[{ 
+    type: ObjectId,
+    ref: 'User'
+  }],
+  
+  comments : [
+    {
+      text: String,
+      created: { type: Date, default: Date.now},
+      postedBy: { type: ObjectId, ref: 'User'}
+    }
+  ]
 
-module.exports = Product;
+},
+{
+  timestamps: true
+
+},
+);
+
+const Post = mongoose.model('Post', postSchema);
+
+module.exports = Post;
