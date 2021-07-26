@@ -4,7 +4,7 @@ import { Image } from "cloudinary-react";
 import { url } from "./utils/CloudinaryService";
 import { CloudinaryContext } from "cloudinary-react";
 
-class Profile extends Component {
+class Photo extends Component {
   constructor(props) {
     super(props);
     this.state = { showMore: false };
@@ -43,9 +43,9 @@ class Profile extends Component {
   static contextType = CloudinaryContext.contextType;
 }
 
-Profile.propTypes = {
+Photo.propTypes = {
   context: PropTypes.object,
   publicId: PropTypes.string,
 };
 
-export default Profile;
+export default Photo;
