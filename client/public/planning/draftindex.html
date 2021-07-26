@@ -44,8 +44,25 @@
                         <a class="nav-link active" aria-current="page" href="#main">Home</a>
                         <a class="nav-link" href="#account">Profile</a>
                         <a class="nav-link" href="#search">Search</a>
-                        <a class="nav-link" href="#account-settings">Login/Sign Up</a>
                     </div>
+                    <ul class="navbar-nav mr-right">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Login/Sign Up
+                            </a>
+                            <div class="dropdown-menu" style="padding: 15px; padding-bottom: 10px;">
+                                <form class="form-horizontal" method="post" accept-charset="UTF-8">
+                                    <input class="form-control login" type="text" name="username" placeholder="Username.." /><br>
+                                    <input class="form-control login" type="password" name="password" placeholder="Password.."/><br>
+                                    <input class="btn btn-primary" type="submit" name="submit" value="Login" />
+                                    <input class="form-control login" type="text" name="username" placeholder="Username.." /><br>
+                                    <input class="form-control login" type="text" name="Create Password" placeholder="Create Password.." /><br>
+                                    <input class="form-control login" type="Re-enter Password" name="" placeholder="Re-Enter Password.."/><br>
+                                    <input class="btn btn-primary" type="submit" name="submit" value="Sign Up" />
+
+                                </form>
+                            </div>
+                        </li>
                 </div>
             </div>
         </nav>
