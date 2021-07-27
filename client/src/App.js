@@ -1,54 +1,50 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import {
-  ApolloClient,
-  InMemoryCache,
-  ApolloProvider,
-  createHttpLink,
-} from '@apollo/client';
-import { setContext } from '@apollo/client/link/context';
 
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
+import PropTypes from "prop-types";
+import { CloudinaryContext, Image } from "cloudinary-react";
+import { photosFetched } from "./actions";
+import PhotoListContainer from "./PhotoList";
+import PhotosUploaderContainer from "./PhotosUploader";
+import { fetchPhotos } from "./utils/CloudinaryService";
+import "./App.css";
 
-import { Provider } from 'react-redux';
-import store from './utils/store';
+class App extends Component {
+  componentDidMount() {
+    fetchPhotos(this.props.cloudName).then(this.props.onPhotosFetched);
+  }
 
-import Success from './pages/Success';
-import OrderHistory from './pages/OrderHistory';
-
-const httpLink = createHttpLink({
-  uri: '/graphql',
-});
-
-const authLink = setContext((_, { headers }) => {
-  const token = localStorage.getItem('id_token');
-  return {
-    headers: {
-      ...headers,
-      authorization: token ? `Bearer ${token}` : '',
-    },
-  };
-});
-
-const client = new ApolloClient({
-  link: authLink.concat(httpLink),
-  cache: new InMemoryCache(),
-});
-
-function App() {
-  return (
-    <ApolloProvider client={client}>
-      <Router>
-        <div>
-          <Provider store={store}>
-            <Nav />
-
-            
-            </Provider>
-        </div>
-      </Router>
-    </ApolloProvider>
-  );
+  render() {
+    return (
+      <CloudinaryContext
+        cloudName={this.props.cloudName}
+        uploadPreset={this.props.uploadPreset}
+      >
+        <Image />
+        <BrowserRouter>
+          <Switch className="router">
+            <Route exact path="/photos" component={PhotoListContainer} />
+            <Route
+              exact
+              path="/photos/new"
+              component={PhotosUploaderContainer}
+            />
+            <Redirect from="/" to="/photos" />
+          </Switch>
+        </BrowserRouter>
+      </CloudinaryContext>
+    );
+  }
 }
 
+App.propTypes = {
+  cloudName: PropTypes.string,
+  uploadPreset: PropTypes.string,
+  onPhotosFetched: PropTypes.func,
+};
 
-export default App;
+const AppContainer = connect(null, { onPhotosFetched: photosFetched })(App);
+
+export default AppContainer;
+
