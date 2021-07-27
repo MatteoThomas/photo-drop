@@ -1,0 +1,16 @@
+body {
+  background-color: rgb(208, 234, 255);
+}
+
+button {
+  margin: 1rem 0 1rem 0;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo {
+  margin: 1rem 1rem 1rem 0;
+}

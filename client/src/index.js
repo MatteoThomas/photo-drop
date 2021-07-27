@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 
 import { createStore, combineReducers } from "redux";
 import { Provider } from "react-redux";
-import App from "./App";
+import Profile from "./pages/profile/Profile";
 import PhotosListReducer from "./reducers/PhotosListReducer";
 import UploadedPhotosReducer from "./reducers/UploadedPhotosReducer";
 import config from "./config/config";
@@ -19,7 +19,7 @@ const { cloud_name, upload_preset } = config;
 
 ReactDOM.render(
   <Provider store={store}>
-    <App cloudName={cloud_name} uploadPreset={upload_preset} />
+    <Profile cloudName={cloud_name} uploadPreset={upload_preset} />
   </Provider>,
   document.getElementById("root")
 );

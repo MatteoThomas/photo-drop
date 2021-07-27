@@ -2,11 +2,11 @@ import React from "react";
 
 const Header = () => (
   <div>
-    <h1 className="title">PROJECT 3</h1>
+    <h1 className="title">Profile Page</h1>
 
     <div className="header">
-      <p>Welcome to Project 3!</p>
-      <p>Sign in to create your profile and start sharing!</p>
+      <p>Welcome (user)</p>
+      <p>Post, comment, and share.</p>
     </div>
     <hr />
   </div>

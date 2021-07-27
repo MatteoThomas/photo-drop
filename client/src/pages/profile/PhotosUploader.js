@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
 import request from "superagent";
 import Dropzone from "react-dropzone";
-import { photosUploaded, updateUploadedPhoto } from "./actions";
+import { photosUploaded, updateUploadedPhoto } from "../../actions";
 import UploadedPhotoStatusContainer from "./UploadedPhotosStatus";
 import { CloudinaryContext } from "cloudinary-react";
 
