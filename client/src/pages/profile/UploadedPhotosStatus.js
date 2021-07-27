@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import request from "superagent";
-import { deleteUploadedPhoto } from "./actions";
+import { deleteUploadedPhoto } from "../../actions";
 import { CloudinaryContext } from "cloudinary-react";
 
 class UploadedPhotoStatus extends Component {

@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-// import { NavLink } from "react-router-dom";
+
 import PropTypes from "prop-types";
-import { openUploadWidget } from "./utils/CloudinaryService";
-import { photosUploaded } from "./actions";
+import { openUploadWidget } from "../../utils/CloudinaryService";
+import { photosUploaded } from "../../actions";
 import Photo from "./Photo";
 import Header from "./Header";
 import { CloudinaryContext } from "cloudinary-react";
@@ -13,14 +13,14 @@ class PhotoList extends Component {
     return (
       <div className="photoList">
         <Header />
-        <h1>Your Photos</h1>
+        <h1>Your Gallery</h1>
         <div className="actions">
-          <p
+          <button
             className="upload_link"
             onClick={this.uploadImageWithCloudinary.bind(this)}
           >
-            Upload multiple images
-          </p>
+            Upload images
+          </button>
         </div>
         {/* can't get single upload page to work, crashes app */}
         {/* <div className="actions">

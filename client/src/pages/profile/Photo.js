@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Image } from "cloudinary-react";
-import { url } from "./utils/CloudinaryService";
+import { url } from "../../utils/CloudinaryService";
 import { CloudinaryContext } from "cloudinary-react";
 
 class Photo extends Component {
@@ -26,7 +26,7 @@ class Photo extends Component {
             crop="fit"
             quality="80"
           ></Image>
-          <button onClick>Delete</button>
+          {/* <button onClick>Delete</button> */}
         </a>
       </div>
     );
