@@ -50,12 +50,17 @@ nav {
     background: rgba(74, 114, 125, .2);
 }
 
+a.navbar-brand {
+    font-family: 'Faster One', cursive;
+  }
+  
+
 
 h1.head1 {
     font-family: 'Faster One', cursive;
 }
 
-/* h1.head2 {
+h1.head2 {
     font-family: 'Limelight', cursive;
 }
 
@@ -69,7 +74,7 @@ h1.head4 {
 
 h1.head5 {
     font-family: 'Zen Dots', cursive;
-} */
+}
 
 h1.head6 {
     font-family: 'Raleway', sans-serif;
