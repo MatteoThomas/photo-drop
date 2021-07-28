@@ -1,4 +1,5 @@
-/* apply a natural box layout model to all elements, but allowing components to change */
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Limelight&family=Righteous&family=Spartan:wght@300;400;700&display=swap');
 html {
   box-sizing: border-box;
 }
@@ -13,13 +14,62 @@ body {
   display: flex;
   width: 50vw;
   font-family: Helvetica, Arial, sans-serif;
-  color: #333;
   margin: 0;
   padding: 10px;
   width: 100%;
   word-wrap: break-word;
+  background: #4A727D;
+  animation: pulse 20s infinite;
 }
 
+/* Background Color Animation */
+@keyframes pulse {
+  0% {
+      background-color: rgba(74, 114, 125, 1);
+      background-position: 0% 82%
+  }
+
+  25% {
+      background-color: rgba(6, 178, 201, 1);
+      background-position: 0% 82%
+  }
+
+  50% {
+      background-color: rgba(11, 198, 198, 1);
+      background-position: 100% 19%
+  }
+
+  75% {
+      background-color: rgba(171, 185, 192, 1);
+      background-position: 0% 82%
+  }
+
+  100% {
+      background-color: rgba(74, 114, 125, 1);
+      background-position: 0% 82%
+  }
+}
+
+
+/* Main Website Fonts(google fonts)*/
+/* Logo */
+a.navbar-brand {
+  font-family: 'Limelight', cursive;
+}
+
+/* Subheadings */
+h3 {
+  font-family: 'Spartan', sans-serif;
+}
+
+/* Paragraphs/General Text */
+p {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+/* other font... */
 #posterframe {
   position: relative;
 }
