@@ -31,6 +31,25 @@ type User {
     token: String!
     createdAt: String!
 }
+
+type Photo {
+    photoId: ID
+    authors: [String]
+    description: String
+    image: String
+    link: String
+    title: String
+}
+
+input PhotoInput {
+    photoId: String
+    authors: [String]
+    description: String
+    image: String
+    link: String
+    title: String
+}
+
 type Auth {
     token: ID!
     user: User
@@ -49,6 +68,8 @@ type Mutation {
     createComment(postId: String!, body: String!): Post!
     deleteComment(postId: ID!, commentId: ID!): Post!
     likePost(postId: ID!): Post!
+    savePhoto(photoData: PhotoInput!): User
+    removePhoto(photoId: ID!): User
 }
 `;
 

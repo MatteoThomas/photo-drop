@@ -20,6 +20,7 @@ const userSchema = new Schema(
             type: String,
             required: true,
         },
+        savedPhotos: [photoSchema],
     },
     // set this to use virtual below
     {

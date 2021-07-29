@@ -86,3 +86,38 @@ mutation likePost($postId: ID!) {
 }
 `;
 
+export const SAVE_PHOTO = gql`
+  mutation savePhoto($photoData: PhotoInput!) {
+    savePhoto(photoData: $phtoData) {
+      _id
+      username
+      email
+      savedPhoto {
+        photoId
+        author
+        image
+        description
+        title
+        link
+      }
+    }
+  }
+`;
+
+export const REMOVE_PHOTO = gql`
+  mutation removePhoto($photoId: ID!) {
+    removePhoto(photoId: $photoId) {
+      _id
+      username
+      email
+      savedPhotos {
+        photoId
+        authors
+        image
+        description
+        title
+        link
+      }
+    }
+  }
+`;

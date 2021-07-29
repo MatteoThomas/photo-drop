@@ -69,6 +69,31 @@ const resolvers = {
             return { token, user };
         },
 
+        savePhoto: async (parent, { photoData }, context) => {
+            if (context.user) {
+                const updatedUser = await User.findByIdAndUpdate(
+                    { _id: context.user._id },
+                    { $addToSet: { savedPhotos: photoData } },
+                    { new: true }
+                );
+                return updatedUser;
+            }
+            throw new AuthenticationError('You need to be logged in!')
+        },
+
+        removePhoto: async (parent, args, context) => {
+            if (context.user) {
+                const updatedUser = await User.findOneAndUpdate(
+                    { _id: context.user._id },
+                    { $pull: { savedPhotos: { photoId: args.photoId } } },
+                    { new: true }
+                );
+                return updatedUser;
+            }
+            throw new AuthenticationError('You need to be logged in!')
+        },
+    
+
         async createPost(_, { body }, context) {
             const user = checkAuth(context);
 
