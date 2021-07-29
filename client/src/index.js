@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 
 import { createStore, combineReducers } from "redux";
 import { Provider } from "react-redux";
-import Profile from "./pages/profile/Profile";
+import Profile from "./pages/profile/Profile.js";
 import PhotosListReducer from "./reducers/PhotosListReducer";
 import UploadedPhotosReducer from "./reducers/UploadedPhotosReducer";
 import config from "./config/config";
