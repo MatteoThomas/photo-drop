@@ -1,11 +1,19 @@
 import React, { Component } from "react";
-import Profile from "../src/pages/profile/profile.js";
+import Nav from "../src/components/Nav/Nav";
+import Profile from "../src/pages/profile/Profile.js";
+import Home from "../src/pages/home/home";
 import "./App.css";
 
 class App extends Component {
   render() {
-    return <Profile />;
+    return <Home />;
   }
 }
+
+// class App extends Component {
+//   render() {
+//     return <Nav />;
+//   }
+// }
 
 export default App;
