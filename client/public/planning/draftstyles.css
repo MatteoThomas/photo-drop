@@ -1,69 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Didact+Gothic&family=Faster+One&family=Limelight&family=Nixie+One&family=Poppins&family=Raleway+Dots&family=Raleway:wght@400;700&family=Righteous&family=Zen+Dots&family=Zen+Tokyo+Zoo&display=swap');
 * {
     box-sizing: border-box;
 }
 
 /* Main */
 body {
-    background: linear-gradient(124deg, #014250, #4A727D, #3E90A9, #06B2C9, #0BC6C6, #ABB9C0, #BFC9CF);
-    background-size: 1800% 1800%;
-    -webkit-animation: rainbow 18s ease infinite;
-    -z-animation: rainbow 18s ease infinite;
-    -o-animation: rainbow 18s ease infinite;
-    animation: rainbow 18s ease infinite;
+    background: #4A727D;
+    animation: pulse 20s infinite;
 }
 
-@-webkit-keyframes rainbow {
+@keyframes pulse {
     0% {
+        background-color: rgba(74, 114, 125, 1);
+        background-position: 0% 82%
+    }
+
+    25% {
+        background-color: rgba(6, 178, 201, 1);
         background-position: 0% 82%
     }
 
     50% {
+        background-color: rgba(11, 198, 198, 1);
         background-position: 100% 19%
     }
 
-    100% {
+    75% {
+        background-color: rgba(171, 185, 192, 1);
         background-position: 0% 82%
-    }
-}
-
-@-moz-keyframes rainbow {
-    0% {
-        background-position: 0% 82%
-    }
-
-    50% {
-        background-position: 100% 19%
     }
 
     100% {
-        background-position: 0% 82%
-    }
-}
-
-@-o-keyframes rainbow {
-    0% {
-        background-position: 0% 82%
-    }
-
-    50% {
-        background-position: 100% 19%
-    }
-
-    100% {
-        background-position: 0% 82%
-    }
-}
-
-@keyframes rainbow {
-    0% {
-        background-position: 0% 82%
-    }
-
-    50% {
-        background-position: 100% 19%
-    }
-
-    100% {
+        background-color: rgba(74, 114, 125, 1);
         background-position: 0% 82%
     }
 }
@@ -82,6 +50,35 @@ nav {
     background: rgba(74, 114, 125, .2);
 }
 
+a.navbar-brand {
+    font-family: 'Faster One', cursive;
+  }
+  
+
+
+h1.head1 {
+    font-family: 'Faster One', cursive;
+}
+
+h1.head2 {
+    font-family: 'Limelight', cursive;
+}
+
+h1.head3 {
+    font-family: 'Nixie One', cursive;
+}
+
+h1.head4 {
+    font-family: 'Raleway Dots', cursive;
+}
+
+h1.head5 {
+    font-family: 'Zen Dots', cursive;
+}
+
+h1.head6 {
+    font-family: 'Raleway', sans-serif;
+}
 
 /* ~HOME PAGE~ */
 div.main {
@@ -303,3 +300,40 @@ $gradient-bottom-right: linear-gradient(135deg, #0e7c7bff, #17bebbff, #d4f4ddff,
 $gradient-top-left: linear-gradient(225deg, #0e7c7bff, #17bebbff, #d4f4ddff, #d62246ff, #4b1d3fff);
 $gradient-bottom-left: linear-gradient(315deg, #0e7c7bff, #17bebbff, #d4f4ddff, #d62246ff, #4b1d3fff);
 $gradient-radial: radial-gradient(#0e7c7bff, #17bebbff, #d4f4ddff, #d62246ff, #4b1d3fff); */
+
+/* Fonts */
+
+font-family: 'Faster One', cursive;
+font-family: 'Limelight', cursive;
+font-family: 'Nixie One', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Raleway Dots', cursive;
+font-family: 'Zen Dots', cursive;
+font-family: 'Zen Tokyo Zoo', cursive;
+
+font-family: 'Alata', sans-serif;
+font-family: 'Didact Gothic', sans-serif;
+font-family: 'Faster One', cursive;
+font-family: 'Limelight', cursive;
+font-family: 'Nixie One', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Raleway Dots', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'Zen Dots', cursive;
+font-family: 'Zen Tokyo Zoo', cursive;
+
+
+h3.head2 {
+    font-family: 'Alata', sans-serif;
+}
+
+h1.head3 {
+    font-family: 'Nixie One', cursive;
+}
+
+h1.head4 {
+    font-family: 'Raleway Dots', cursive;
+} 
+
+
