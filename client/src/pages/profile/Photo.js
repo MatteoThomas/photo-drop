@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Image } from "cloudinary-react";
+import { Image, Transformation } from "cloudinary-react";
 import { url } from "../../utils/CloudinaryService";
 import { CloudinaryContext } from "cloudinary-react";
-
+// import PhotoThumbnails from "./PhotoThumbnails";
+import "./styles.css";
 class Photo extends Component {
   constructor(props) {
     super(props);
@@ -25,9 +26,17 @@ class Photo extends Component {
             height="150"
             crop="fit"
             quality="80"
-          ></Image>
-          {/* <button onClick>Delete</button> */}
+          >
+            <Transformation quality="auto" fetchFormat="auto" />
+          </Image>
         </a>
+        <div id="buttons">
+          <button>Comment</button>
+          <button>Edit</button>
+          <span id="heart">
+            <i className="fas fa-heart"></i>
+          </span>
+        </div>
       </div>
     );
   }
