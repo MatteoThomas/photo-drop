@@ -4,11 +4,20 @@ export const GET_ME  = gql`
     {
         me {
             _id
-            userName
+            username
             email
+            photoCount
+            savedPhotos {
+                photoId
+                authors
+                title
+                description
+                image
+                link
+            }
         }
     }
-`
+`;
 
 export const FETCH_POSTS_QUERY = gql`
     getPosts {
