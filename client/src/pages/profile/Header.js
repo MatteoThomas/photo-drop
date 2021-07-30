@@ -1,14 +1,13 @@
 import React from "react";
+import "./styles.css";
 
 const Header = () => (
   <div>
-    <h1 className="title">Profile Page</h1>
-
     <div className="header">
-      <p>Welcome (user)</p>
-      <p>Post, comment, and share.</p>
+      <h1>Matthew E</h1>
+      <h2>Log Out</h2>
+      <div id="userlog"></div>
     </div>
-    <hr />
   </div>
 );
 
