@@ -1,0 +1,49 @@
+:root {
+  --script: "Kaushan Script", cursive;
+  --thin: "Raleway", sans-serif;
+  --thick: "Nanum Gothic", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin: 3rem;
+}
+.container h1 {
+  font-family: var(--thick);
+  font-size: 4rem;
+  color: rgb(240, 255, 255);
+  letter-spacing: 0rem;
+  margin: 2rem;
+}
+
+form {
+  border: 0rem;
+}
+
+h2 {
+  font-family: var(--thick);
+  color: azure;
+}
+
+h3 {
+  font-family: var(--thin);
+  color: azure;
+}
+
+.results {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.text {
+  font-size: 2rem;
+  color: azure;
+}
+
+.picContainer img {
+  margin: 1rem;
+  width: 5rem;
+  border-radius: 5px;
+}

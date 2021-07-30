@@ -1,110 +1,93 @@
+/* Google Fonts Import */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Limelight&family=Righteous&family=Spartan:wght@300;400;700&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
-  background-color: rgb(59, 64, 68);
-  color: rgb(231, 231, 231);
-  margin: 2rem;
+  display: flex;
+  width: 50vw;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  word-wrap: break-word;
+  background: #4a727d;
+  animation: pulse 20s infinite;
 }
 
-h1,
+/* Background Color Animation */
+/* @keyframes pulse {
+  0% {
+      background-color: rgba(74, 114, 125, 1);
+      background-position: 0% 82%
+  }
+
+  25% {
+      background-color: rgba(6, 178, 201, 1);
+      background-position: 0% 82%
+  }
+
+  50% {
+      background-color: rgba(11, 198, 198, 1);
+      background-position: 100% 19%
+  }
+
+  75% {
+      background-color: rgba(171, 185, 192, 1);
+      background-position: 0% 82%
+  }
+
+  100% {
+      background-color: rgba(74, 114, 125, 1);
+      background-position: 0% 82%
+  }
+} */
+
+/* Main Website Fonts(google fonts)*/
+/* Logo */
+a.navbar-brand {
+  font-family: "Limelight", cursive;
+}
+
+/* Subheadings */
+h3 {
+  font-family: "Spartan", sans-serif;
+}
+
+/* Paragraphs/General Text (italic/regular/bold) */
+p {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* other font... */
+#posterframe {
+  position: relative;
+}
+
+h1 {
+  color: #0e2953;
+  font-size: 18px;
+}
+
+h1.header {
+  margin-top: 25px;
+}
+
 h2 {
-  color: #ffffff;
+  color: #666;
+  font-size: 16px;
 }
 
-img {
-  width: 5rem;
-}
-
-#avatar {
-  display: flex;
-  justify-content: center;
-  border-radius: 2px;
-  background-color: #ffffff;
-  filter: grayscale(100);
-}
-
-#bio {
-  margin-right: 2rem;
-  color: #ffffff;
-}
-
-#text {
-  width: 200px;
-  font-size: small;
-  font-weight: 100;
-}
-
-.container {
-  display: flex;
-}
-.photoList {
-  display: flex;
-}
-
-.header {
-  margin-left: 1rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-.header h2 {
-  position: absolute;
-  right: 2rem;
-  top: 1rem;
-}
-
-#userDashboard {
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  color: #b1b1b1;
-  padding: 0rem 0.5rem 0rem 0.8rem;
-  border-radius: 2px;
-  margin-right: 2rem;
-  width: 7rem;
-}
-
-button {
-  margin: 0.5rem 0.5rem 0.5rem 0;
-  color: #ffffff;
-  border-width: 0px;
-  font-size: 0.7rem;
-  background-color: #b1b1b1;
-  padding: 0.3rem;
-  border-radius: 2px;
-}
-
-.upload_link {
-  margin: 0rem 0rem 0rem 0;
-  color: #b1b1b1;
-  background-color: #ffffff;
-  font-size: 1rem;
-  padding: 1rem;
-  border: none;
-  width: 7rem;
-  cursor: pointer;
-}
-
-.fa-heart {
-  margin-left: 0.1rem;
-  color: rgb(97, 97, 97);
-  font-size: 0.7rem;
-}
-
-.photos {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-img.static-photo {
-  max-width: 20%;
-  position: absolute;
-  right: 0;
-}
-
-.photo .thumbnail {
-  margin: 1rem;
-  max-width: 10rem;
-  min-width: 7rem;
-  border: none;
+p {
+  font-size: 14px;
+  line-height: 18px;
 }
 
 #logo {
@@ -124,8 +107,44 @@ a {
   margin: 20px 0;
 }
 
+.upload_link {
+  color: #000;
+  border: 1px solid #aaa;
+  background-color: #e0e0e0;
+  font-size: 18px;
+  padding: 5px 10px;
+  width: 250px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+  cursor: pointer;
+}
+
 .header {
-  max-width: 95vw;
+  max-width: 80%;
+}
+
+img.static-photo {
+  max-width: 20%;
+  position: absolute;
+  right: 0;
+}
+
+.photos {
+  display: flex;
+  width: 80%;
+}
+
+.photo {
+  margin: 10px;
+  padding: 10px;
+}
+
+.photo .thumbnail {
+  margin-top: 10px;
+  max-width: 300px;
+  border: none;
 }
 
 .toggle_info {
@@ -210,6 +229,10 @@ form .error {
   margin: 0 10px;
 }
 
+#direct_upload,
+#direct_upload_jquery {
+  /* border: 4px dashed #ccc; */
+}
 #direct_upload.dragover {
   border-color: #0c0;
 }
@@ -284,34 +307,4 @@ form .error {
 .preview video {
   max-width: 300px;
   max-height: 150px;
-}
-
-@media only screen and (max-width: 600px) {
-  .container {
-    flex-direction: column;
-  }
-  .photoList {
-    display: flex;
-    flex-direction: column;
-  }
-  #Userdashboard {
-    display: flex;
-  }
-
-  #userDashboard {
-    display: flex;
-
-    font-size: small;
-    background-color: #ffffff;
-    color: #b1b1b1;
-    padding: 0rem 0.5rem 0rem 0.8rem;
-    border-radius: 2px;
-    margin-left: 2rem;
-  }
-
-  #text {
-    width: 350px;
-    font-size: small;
-    font-weight: 100;
-  }
 }

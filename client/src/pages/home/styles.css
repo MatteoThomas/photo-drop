@@ -1,73 +1,121 @@
-div#main {
-    background: url("https://images.unsplash.com/photo-1462819067004-905a72ea3996?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+:root {
+  --script: "Kaushan Script", cursive;
+  --thin: "Raleway", sans-serif;
+  --thick: "Nanum Gothic", sans-serif;
 }
 
-div #main-row {
-    padding: 100px;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    background-color: rgba(74, 114, 125, .3);
-    animation: pulse 20s infinite;
-
+.html {
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes pulse {
-    0% {
-        background-color: rgba(74, 114, 125, .3);
-        background-position: 0% 82%
-    }
-
-    25% {
-        background-color: rgba(6, 178, 201, .3);
-        background-position: 0% 82%
-    }
-
-    /* 50% {
-        background-color: rgba(11, 198, 198, .3);
-        background-position: 100% 19%
-    } */
-
-    75% {
-        background-color: rgba(171, 185, 192, .3);
-        background-position: 0% 82%
-    }
-
-    100% {
-        background-color: rgba(74, 114, 125, .3);
-        background-position: 0% 82%
-    }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-/* img#random-pic {
-    width: 80vw;
-    height: 70vh;
-} */
-
-p#intro {
-    color: rgba(6, 114, 147, 1);
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 42px;
+.header {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: var(--script);
+  font-size: 11.5vw;
+  color: rgb(240, 255, 255);
+  letter-spacing: -0.7vw;
+  position: absolute;
+  top: 5rem;
+  width: 100%;
+  margin-left: 0;
 }
 
-
-h1#main-header {
-    color: rgba(74, 114, 125, 1);
-    font-family: 'Limelight', cursive;
-    font-size: 65px;
+.header span {
+  text-align: center;
+  font-family: var(--thick);
+  color: azure;
+  font-size: 1.5vw;
+  letter-spacing: 0.6vw;
+  width: 100%;
+  margin-top: -2vh;
 }
 
-p#intro-sub {
-    font-family: 'Spartan', sans-serif;
-    font-style:italic;
-    font-size: 25px;
+#frame {
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 3.5rem;
 }
 
-a {
-    color: rgba(6, 178, 201, 1);
-    text-decoration: none;
+#frame img {
+  width: 100vw;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .header {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--script);
+    font-size: 15.5vw;
+    color: azure;
+    letter-spacing: -0.7vw;
+    position: absolute;
+    top: 5rem;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .header span {
+    text-align: center;
+    font-family: var(--thick);
+    color: azure;
+    font-size: 3.5vw;
+    letter-spacing: 0.6vw;
+    width: 100%;
+    margin-top: -2vh;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .header {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--script);
+    font-size: 11.5vw;
+    color: azure;
+    letter-spacing: -0.7vw;
+    position: absolute;
+    top: 5rem;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .header span {
+    text-align: center;
+    font-family: var(--thick);
+    color: azure;
+    font-size: 1.5vw;
+    letter-spacing: 0.6vw;
+    width: 100%;
+    margin-top: -2vh;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
