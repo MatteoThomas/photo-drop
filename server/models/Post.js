@@ -9,7 +9,7 @@ title:{ type:String
 body: {type: String
 },
 
-userName:{type: String
+username:{type: String
 },
 
 image: {
@@ -19,13 +19,13 @@ createdAt: String,
 comments: [
     {
     body: String,
-    userName: String,
+    username: String,
     createdAt: String
     }
 ],
 likes: [
     {
-    userName: String,
+    username: String,
     createdAt: String
     }
 ],

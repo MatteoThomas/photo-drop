@@ -1,6 +1,8 @@
 // import React from "react";
 import React from "react";
 import ReactDOM from "react-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
 import { createStore, combineReducers } from "redux";
 import { Provider } from "react-redux";
 import PhotosListReducer from "./reducers/PhotosListReducer";

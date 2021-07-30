@@ -20,14 +20,17 @@ const AppNavbar = () => {
           <Navbar.Toggle aria-controls='navbar' />
           <Navbar.Collapse id='navbar'>
             <Nav className='ml-auto'>
-              <Nav.Link as={Link} to='/'>
-                Search For Pictures
-              </Nav.Link>
               {/* if user is logged in show saved books and logout */}
               {Auth.loggedIn() ? (
                 <>
+                <Nav.Link as={Link} to='/search'>
+                    Search for Pictures
+                  </Nav.Link>
                   <Nav.Link as={Link} to='/saved'>
                     See Your Favorite Pictures
+                  </Nav.Link>
+                  <Nav.Link as={Link} to='/profile'>
+                  Profile
                   </Nav.Link>
                   <Nav.Link onClick={Auth.logout}>Logout</Nav.Link>
                 </>
