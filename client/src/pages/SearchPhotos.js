@@ -71,9 +71,10 @@ const SearchPhotos = () => {
         authors: photo.user.name || ["No Photographer to display"],
         title: photo.description,
         description: photo.alt_description || ["No description"],
-        image: photo.urls.small || "",
+        image: photo.urls.full || "",
       }));
 
+      console.log(photoData);
       setResult(photoData);
       setPhoto("");
     } catch (err) {
@@ -107,7 +108,7 @@ const SearchPhotos = () => {
 
   return (
     <>
-      {/* <Container>
+      <Container>
         <h1>Photo Search</h1>
         <Form onSubmit={handleFormSubmit}>
           <Form.Row>
@@ -126,14 +127,14 @@ const SearchPhotos = () => {
             </Col>
           </Form.Row>
         </Form>
-      </Container> */}
+      </Container>
 
       <Container>
-        {/* <h2>
+        <h2>
           {searchResult.length
             ? `Viewing ${searchResult.length} results:`
             : "Results"}
-        </h2> */}
+        </h2>
         <div className="resultContainer">
           <Results />
         </div>
@@ -141,10 +142,10 @@ const SearchPhotos = () => {
           {searchResult.map((photo) => {
             return (
               <Card key={photo.id} border="dark">
-                {photo.urls.small ? (
+                {photo.urls.full ? (
                   <Card.Img
-                    src={photo.urls.small}
-                    alt={`The cover for ${photo.description}`}
+                    src={photo.urls.full}
+                    alt={`The cover for ${photo.id}`}
                     variant="top"
                   />
                 ) : null}
@@ -155,13 +156,13 @@ const SearchPhotos = () => {
                   {Auth.loggedIn() && (
                     <Button
                       disabled={savedPhotoIds?.some(
-                        (savedPhotoId) => savedPhotoId === photo.photoId
+                        (savedPhotoId) => savedPhotoId === photo.id
                       )}
                       className="btn-block btn-info"
-                      onClick={() => handleSavePhoto(photo.photoId)}
+                      onClick={() => handleSavePhoto(photo.id)}
                     >
                       {savedPhotoIds?.some(
-                        (savedPhotoId) => savedPhotoId === photo.photoId
+                        (savedPhotoId) => savedPhotoId === photo.id
                       )
                         ? "This photo has already been saved!"
                         : "Save this photo!"}
