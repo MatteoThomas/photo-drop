@@ -1,6 +1,7 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
 
+const photoSchema = require('./photo');
 
 const userSchema = new Schema(
     {
