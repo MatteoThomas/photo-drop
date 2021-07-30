@@ -3,7 +3,7 @@ import { Jumbotron, Container, Col, Form, Button, Card, CardColumns } from 'reac
 
 import Auth from '../utils/auth';
 import { savePhotoIds, getSavedPhotoIds } from '../utils/localStorage';
-import { useMutation } from '@apollo/react-hooks';
+import { useMutation } from '@apollo/client';
 import { SAVE_PHOTO } from '../utils/mutations';
 import axios from "axios"
 

@@ -10,9 +10,8 @@ import {setContext} from '@apollo/client/link/context'
 
 import config from "./config/config";
 
-import React, { Component } from "react";
-import Nav from "../src/components/Nav/Nav";
-import Profile from "../src/pages/profile/Profile.js";
+import React  from "react";
+import Profile from "../src/pages/profile/profile.js";
 import Home from "../src/pages/home/home";
 import "./App.css";
 
@@ -41,7 +40,7 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-
+console.log(client)
 
 function App() {
   return (

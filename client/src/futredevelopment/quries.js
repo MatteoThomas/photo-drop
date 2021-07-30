@@ -18,3 +18,24 @@ export const GET_ME  = gql`
         }
     }
 `;
+
+// export const FETCH_POSTS_QUERY = gql`
+//     getPosts {
+//     id
+//     title
+//     body
+//     image
+//     createdAt
+//     username
+//     likeCount
+//     likes {
+//         username
+//     }
+//     commentCount
+//     comments {
+//         id
+//         username
+//         createdAt
+//         body
+//     }
+//     }`
