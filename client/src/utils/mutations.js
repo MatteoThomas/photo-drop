@@ -38,7 +38,7 @@ mutation addUser($username: String!, $password: String!, $email: String!) {
 
 export const SAVE_PHOTO = gql`
   mutation savePhoto($photoData: PhotoInput!) {
-    savePhoto(photoData: $phtoData) {
+    savePhoto(photoData: $photoData) {
       _id
       username
       email
