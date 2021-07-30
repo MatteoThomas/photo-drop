@@ -135,9 +135,9 @@ const SearchPhotos = () => {
             ? `Viewing ${searchResult.length} results:`
             : "Results"}
         </h2>
-        <div className="resultContainer">
+        {/* <div className="resultContainer">
           <Results />
-        </div>
+        </div> */}
         <CardColumns>
           {searchResult.map((photo) => {
             return (
