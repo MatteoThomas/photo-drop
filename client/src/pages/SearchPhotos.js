@@ -59,9 +59,10 @@ const SearchPhotos = () => {
         authors: photo.user.name || ['No Photographer to display'],
         title: photo.description,
         description: photo.alt_description || ['No description'],
-        image: photo.urls.small || '',
+        image: photo.urls.full || '',
       }));
 
+      console.log(photoData)
       setResult(photoData);
       setPhoto('');
     } catch (err) {
@@ -130,8 +131,8 @@ const SearchPhotos = () => {
           {searchResult.map((photo) => {
             return (
               <Card key={photo.id} border='dark'>
-                {photo.urls.small ? (
-                  <Card.Img src={photo.urls.small} alt={`The cover for ${photo.description}`} variant='top' />
+                {photo.urls.full ? (
+                  <Card.Img src={photo.urls.full} alt={`The cover for ${photo.id}`} variant='top' />
                 ) : null}
                 <Card.Body>
                   <Card.Title>{photo.description}</Card.Title>
@@ -139,10 +140,10 @@ const SearchPhotos = () => {
                   <Card.Text>{photo.description}</Card.Text>
                   {Auth.loggedIn() && (
                     <Button
-                      disabled={savedPhotoIds?.some((savedPhotoId) => savedPhotoId === photo.photoId)}
+                      disabled={savedPhotoIds?.some((savedPhotoId) => savedPhotoId === photo.id)}
                       className='btn-block btn-info'
-                      onClick={() => handleSavePhoto(photo.photoId)}>
-                      {savedPhotoIds?.some((savedPhotoId) => savedPhotoId === photo.photoId)
+                      onClick={() => handleSavePhoto(photo.id)}>
+                      {savedPhotoIds?.some((savedPhotoId) => savedPhotoId === photo.id)
                         ? 'This photo has already been saved!'
                         : 'Save this photo!'}
                     </Button>

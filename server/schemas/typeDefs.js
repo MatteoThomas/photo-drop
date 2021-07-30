@@ -16,6 +16,7 @@ type Photo {
     link: String
     title: String
 }
+
 input PhotoInput {
     photoId: String
     authors: [String]
