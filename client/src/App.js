@@ -1,15 +1,21 @@
-import React from 'react';
+
+
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, createHttpLink, InMemoryCache } from '@apollo/client';
 import SearchPhotos from './pages/SearchPhotos';
 import SavedPhotos from './pages/SavedPhotos';
-import Home from './pages/home/home'
 import Navbar from './components/Navbar';
 import {setContext} from '@apollo/client/link/context'
 
-import Profile from "./pages/profile/profile";
 
 import config from "./config/config";
+
+import React, { Component } from "react";
+import Nav from "../src/components/Nav/Nav";
+import Profile from "../src/pages/profile/Profile.js";
+import Home from "../src/pages/home/home";
+import "./App.css";
+
 
 
 

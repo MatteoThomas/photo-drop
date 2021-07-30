@@ -5,6 +5,9 @@
   "description": "",
   "main": "server/server.js",
   "dependencies": {
+    "@stripe/react-stripe-js": "^1.4.1",
+    "@stripe/stripe-js": "^1.16.0",
+    "babel": "^6.23.0",
     "cloudinary-react": "^1.6.8",
     "nodemon": "^2.0.12",
     "react": "^17.0.1",
@@ -15,9 +18,7 @@
     "react-scripts": "4.0.0",
     "redux": "^4.0.5",
     "superagent": "^6.1.0",
-    "yarn": "^1.22.10",
-    "@stripe/react-stripe-js": "^1.4.1",
-    "@stripe/stripe-js": "^1.16.0"
+    "yarn": "^1.22.10"
   },
   "scripts": {
     "start": "node server/server.js",
