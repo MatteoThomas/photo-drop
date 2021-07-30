@@ -1,11 +1,13 @@
-  import React from 'react';
-import { Jumbotron, Container, CardColumns, Card, Button } from 'react-bootstrap';
+import React from "react";
+import { Container, CardColumns, Card, Button } from "react-bootstrap";
 
-import { useQuery, useMutation } from '@apollo/client';
-import { GET_ME } from '../utils/queries';
-import { REMOVE_PHOTO } from '../utils/mutations';
-import Auth from '../utils/auth';
-import { removePhotoId } from '../utils/localStorage';
+import { useQuery, useMutation } from "@apollo/client";
+import { GET_ME } from "../utils/queries";
+import { REMOVE_PHOTO } from "../utils/mutations";
+import Auth from "../utils/auth";
+import { removePhotoId } from "../utils/localStorage";
+import Saved from "../../src/pages/Saved";
+import "./savedStyles.css";
 
 const SavedPhotos = () => {
   const { loading, data } = useQuery(GET_ME);
@@ -15,7 +17,6 @@ const SavedPhotos = () => {
 
   // use this to determine if `useEffect()` hook needs to run again
   // const userDataLength = Object.keys(userData).length;
-
 
   // create function that accepts the photo's mongo _id value as param and deletes the photo from the database
   const handleDeletePhoto = async (photoId) => {
@@ -42,34 +43,39 @@ const SavedPhotos = () => {
   }
 
   return (
-    <>
-      <Jumbotron fluid className='text-light bg-dark'>
-        <Container>
-          <h1>Viewing {userData.username}'s saved photos!</h1>
-        </Container>
-      </Jumbotron>
+    <div className="container">
+      <div className="header">
+        <h1>Viewing {userData.username}'s saved photos</h1>
+      </div>
+
       <Container>
-        <h2>
-        {userData.savedPhotos?.length
+        {/* <h2>
+          {userData.savedPhotos?.length
             ? `Viewing ${userData.savedPhotos.length} saved ${
-                userData.savedPhotos.length === 1 ? 'photo' : 'photos'
+                userData.savedPhotos.length === 1 ? "photo" : "photos"
               }:`
-            : 'You have no saved photos!'}
-        </h2>
+            : "You have no saved photos!"}
+        </h2> */}
+        <Saved />
         <CardColumns>
           {userData.savedPhotos?.map((photo) => {
             return (
-              <Card key={photo.photoId} border='dark'>
+              <Card key={photo.photoId} border="dark">
                 {photo.image ? (
-                  <Card.Img src={photo.image} alt={`The cover for ${photo.title}`} variant='top' />
+                  <Card.Img
+                    src={photo.image}
+                    alt={`The cover for ${photo.title}`}
+                    variant="top"
+                  />
                 ) : null}
                 <Card.Body>
                   <Card.Title>{photo.title}</Card.Title>
-                  <p className='small'>Authors: {photo.authors}</p>
+                  <p className="small">Authors: {photo.authors}</p>
                   <Card.Text>{photo.description}</Card.Text>
                   <Button
-                    className='btn-block btn-danger'
-                    onClick={() => handleDeletePhoto(photo.photoId)}>
+                    className="btn-block btn-danger"
+                    onClick={() => handleDeletePhoto(photo.photoId)}
+                  >
                     Delete this photo!
                   </Button>
                 </Card.Body>
@@ -78,7 +84,7 @@ const SavedPhotos = () => {
           })}
         </CardColumns>
       </Container>
-    </>
+    </div>
   );
 };
 

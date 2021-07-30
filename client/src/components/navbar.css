@@ -1,0 +1,10 @@
+.navbar {
+  width: 100vw;
+  position: absolute;
+  left: 0rem;
+  top: 0;
+}
+
+.nav-link a {
+  color: azure;
+}
