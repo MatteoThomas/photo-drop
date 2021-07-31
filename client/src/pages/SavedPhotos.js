@@ -45,7 +45,7 @@ const SavedPhotos = () => {
   return (
     <div className="container">
       <div className="header">
-        <h1>Viewing {userData.username}'s saved photos</h1>
+        <h1>{userData.username}'s saved photos</h1>
       </div>
 
       <Container>

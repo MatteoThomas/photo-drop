@@ -14,7 +14,7 @@ const AvatarBio = () => {
         <img src={avatar1} alt="avatar" />
       </div>
       <div id="text">
-        <h3>Bio</h3>
+        <h2>Bio</h2>
         <h3>
           Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
           impedit quo minus id quod maxime placeat facere possimus, omnis

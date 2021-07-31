@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-
 import PropTypes from "prop-types";
 import { openUploadWidget } from "../../utils/CloudinaryService";
 import { photosUploaded } from "../../actions";
 import Photo from "./Photo";
-import Userdashboard from "./Userdashboard";
+// import Userdashboard from "./Userdashboard";
 import Header from "./Header";
 import { CloudinaryContext } from "cloudinary-react";
 import AvatarBio from "./AvatarBio";
@@ -25,10 +24,10 @@ class PhotoList extends Component {
                   className="upload_link"
                   onClick={this.uploadImageWithCloudinary.bind(this)}
                 >
-                  <h3>Upload</h3>
+                  <h2>Upload</h2>
                 </button>
               </div>
-              <Userdashboard />
+              {/* <Userdashboard /> */}
             </div>
             <div className="photos">
               {this.props.photos.length === 0 && (
@@ -40,8 +39,8 @@ class PhotoList extends Component {
                 );
               })}
             </div>
+            <AvatarBio />
           </div>
-          <AvatarBio />
         </div>
       </div>
     );
