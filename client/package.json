@@ -1,5 +1,5 @@
 {
-  "name": "picture-client",
+  "name": "post-your-pics",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3001/",
