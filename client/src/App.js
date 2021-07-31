@@ -11,6 +11,8 @@ import config from "./config/config";
 import React  from "react";
 import Profile from "../src/pages/profile/profile.js";
 import Home from "../src/pages/home/home";
+import Footer from './components/footer';
+import Payment from './components/Payment'
 import "./App.css";
 
 
@@ -54,6 +56,11 @@ function App() {
             </Route>
             <Route render={() => <h1 className='display-2'>Wrong page!</h1>} />
           </Switch>
+          <Footer/>
+          <Switch>
+            <Route exact path ='/Payment' component={Payment} />
+
+    </Switch>
         </>
       </Router>
     </ApolloProvider>
