@@ -31,11 +31,8 @@ class Photo extends Component {
           </Image>
         </a>
         <div id="buttons">
-          <button>Comment</button>
-          <button>Edit</button>
-          <span id="heart">
-            <i className="fas fa-heart"></i>
-          </span>
+          <h3>Remark</h3>
+          <h3>Edit</h3>
         </div>
       </div>
     );

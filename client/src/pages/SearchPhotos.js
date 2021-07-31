@@ -123,7 +123,7 @@ const SearchPhotos = () => {
               />
             </Col>
             <Col xs={12} md={4}>
-              <Button type="submit">Submit Search</Button>
+              {/* <Button type="submit">Submit Search</Button> */}
             </Col>
           </Form.Row>
         </Form>

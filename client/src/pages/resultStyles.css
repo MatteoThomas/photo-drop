@@ -9,6 +9,18 @@ body {
   margin: 2rem;
 }
 
+.card {
+  margin-top: 2rem;
+  color: azure;
+  background-color: rgb(59, 64, 68);
+  outline: none;
+  border: none;
+}
+
+.header {
+  margin-top: 1rem;
+}
+
 .container {
   display: flex;
   flex-direction: column;

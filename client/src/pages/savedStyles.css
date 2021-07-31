@@ -6,10 +6,9 @@
 body {
   background-color: rgb(59, 64, 68);
   color: rgb(231, 231, 231);
-  margin: 2rem;
 }
 
-.container h1 {
+.header h1 {
   font-family: var(--thick);
   color: azure;
   font-size: 2rem;
@@ -23,8 +22,15 @@ h2 {
 h3 {
   font-family: var(--thin);
   color: azure;
+  font-size: 1rem;
 }
 
-img {
+.picContainer img {
+  width: 9rem;
+  border-radius: 5px;
   object-fit: cover;
+}
+
+.picContainer {
+  margin-top: 12rem;
 }
