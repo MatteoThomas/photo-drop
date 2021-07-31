@@ -9,7 +9,6 @@
     "@stripe/stripe-js": "^1.16.0",
     "babel": "^6.23.0",
     "cloudinary-react": "^1.6.8",
-    "heroku": "^7.56.1",
     "nodemon": "^2.0.12",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -22,7 +21,7 @@
     "yarn": "^1.22.10"
   },
   "scripts": {
-    "start": "node server/server.js concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "start": "node server/server.js",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "seed": "cd server && npm run seed",
