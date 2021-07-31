@@ -308,3 +308,13 @@ form .error {
   max-width: 300px;
   max-height: 150px;
 }
+
+.footer{
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #4a727d;
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
