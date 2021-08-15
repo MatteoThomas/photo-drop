@@ -1,4 +1,4 @@
-# Group 3 Project 
+# Photo Drop
 [![Status](https://img.shields.io/badge/Status-In_Progress-80DEEA?style=for-the-badge&link=https://github.com/kaivont85/Group-3-Project)](https://github.com/kaivont85/Group-3-Project)
 
 [![React](https://img.shields.io/badge/React-Technology_Used-000000?labelColor=d1d1d1&style=for-the-badge&logo=React&link=https://github.com/kaivont85/Group-3-Project)](https://github.com/kaivont85/Group-3-Project)
@@ -39,6 +39,7 @@ When I use the app on a mobile device, it functions efficiently and appropriatel
 
 
 ## Links
+-[Deployed App](https://photo-drop2.herokuapp.com/)
 - [Github Repo](https://github.com/kaivont85/Group-3-Project)
 - [Google Docs](https://docs.google.com/document/d/1z_KG5lV5i3zaO-4JRKbiZoYg3_6UlroHVJhkCkvh8rM/edit)
 
