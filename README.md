@@ -1,5 +1,4 @@
 # Photo Drop
-[![Status](https://img.shields.io/badge/Status-In_Progress-80DEEA?style=for-the-badge&link=https://github.com/kaivont85/Group-3-Project)](https://github.com/kaivont85/Group-3-Project)
 
 [![React](https://img.shields.io/badge/React-Technology_Used-000000?labelColor=d1d1d1&style=for-the-badge&logo=React&link=https://github.com/kaivont85/Group-3-Project)](https://github.com/kaivont85/Group-3-Project)
 [![GraphQL](https://img.shields.io/badge/GraphQL-Technology_Used-000000?labelColor=d1d1d1&style=for-the-badge&logo=GraphQL&link=https://github.com/kaivont85/Group-3-Project)](https://github.com/kaivont85/Group-3-Project)
