@@ -40,7 +40,7 @@ When I use the app on a mobile device, it functions efficiently and appropriatel
 ## Links
 -[Deployed App](https://photo-drop2.herokuapp.com/)
 - [Github Repo](https://github.com/kaivont85/Group-3-Project)
-- [Google Docs](https://docs.google.com/document/d/1z_KG5lV5i3zaO-4JRKbiZoYg3_6UlroHVJhkCkvh8rM/edit)
+
 
 ## Technologies
 
@@ -55,15 +55,7 @@ When I use the app on a mobile device, it functions efficiently and appropriatel
 - Google Maps
 
 ![Git](https://img.shields.io/badge/Git-000000?style=flat&logo=Git) ![npm](https://img.shields.io/badge/npm-000000?style=flat&logo=npm) ![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-000000?style=flat&logo=Visual-Studio-Code) ![JavaScript](https://img.shields.io/badge/JavaScript-000000?style=flat&logo=JavaScript) ![CSS3](https://img.shields.io/badge/CSS3-000000?style=flat&logo=CSS3) ![HTML5](https://img.shields.io/badge/HTML5-000000?style=flat&logo=HTML5)
-## Installation
-A little intro about the installation.
 
-```
-$ git clone https://example.com
-$ cd ../path/to/the/file
-$ npm install
-$ npm start
-```
 ## Usage
 
 To view, upload, and comment on pictures.
