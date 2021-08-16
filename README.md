@@ -38,8 +38,8 @@ When I use the app on a mobile device, it functions efficiently and appropriatel
 
 
 ## Links
--[Deployed App](https://photo-drop2.herokuapp.com/)
-- [Github Repo](https://github.com/kaivont85/Group-3-Project)
+- [Deployed App](https://photo-drop2.herokuapp.com/)
+- [Github Repo](https://github.com/MatteoThomas/photo-drop)
 
 
 ## Technologies
