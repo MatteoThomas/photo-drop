@@ -15,15 +15,6 @@ const Home = () => {
   const randomIndex = Math.floor(Math.random() * album.length);
   const picture = album[randomIndex];
 
-  // const contain = document.getElementById("frame");
-
-  // function getRandomImage() {
-  //   var num = Math.floor(Math.random() * album.length);
-  //   var img = album[num];
-  //   contain.innerHTML = '<img src="' + img + '">';
-  // }
-  // getRandomImage();
-
   return (
     <div className="container">
       <div className="header">
