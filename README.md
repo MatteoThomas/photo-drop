@@ -49,10 +49,8 @@ When I use the app on a mobile device, it functions efficiently and appropriatel
 - NodeJS
 - Express
 - GraphQL
-- Stripe $
-- PixiJS 
 - Cloudinary
-- Google Maps
+
 
 ![Git](https://img.shields.io/badge/Git-000000?style=flat&logo=Git) ![npm](https://img.shields.io/badge/npm-000000?style=flat&logo=npm) ![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-000000?style=flat&logo=Visual-Studio-Code) ![JavaScript](https://img.shields.io/badge/JavaScript-000000?style=flat&logo=JavaScript) ![CSS3](https://img.shields.io/badge/CSS3-000000?style=flat&logo=CSS3) ![HTML5](https://img.shields.io/badge/HTML5-000000?style=flat&logo=HTML5)
 
