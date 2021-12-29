@@ -1,60 +1,25 @@
-# Photo Drop
 
 ![Homepage screenshot](/photodrop_screenshot.png)
+# Photo Drop
 
-## Table of Contents:
-
+- [Photo Drop](#photo-drop)
 - [Description](#description)
 - [Links](#links)
 - [Technologies](#technologies)
-- [Installation](#installation)
-- [Usage](#usage)
+- [Future development](#future-development)
 - [Contributors](#contributors)
-- [Status/Updates](#statusupdates)
 - [License](#license)
+# Description
 
-## Description
+Photodrop is a one stop shop for collecting, sharing, and commenting on photos. After creating an account the user can
+upload images, search other user's images, tag photos with photography related tags, and comment on any uploaded image. An Instagram for photographers that just want to focus on the pictures.
+# Links
 
-An app that lets users upload and share their own images with other users. After creating an account the user can
-upload images and search others images.
+- [App](https://photo-drop2.herokuapp.com/)
+- [Repository](https://github.com/MatteoThomas/photo-drop)
 
-## User Story
 
-```
-As a user, when I open the homepage, I am prompted to create a username and password, and indicate my photography status (professional, student, hobbyist) to generate my profile.
-
-When I click on my profile, I can upload my images
-```
-
-Future development:
-
-```
-When I click on my profile, I can upload my images, submit technical information such as camera type, and write a brief description of the image.
-
-When I type in the search box, images with corresponding tags are generated. I can search by location, by content, or by camera type.
-
-When I click on an image, the photographer's information is displayed and I can comment on the image.
-
-When I use the app on a mobile device, it functions efficiently and appropriately.
-
-When I see an image I greatly admire, I can donate to the artist.
-
-When I upload an image, I can add a pin on Google Maps from the location the image was taken.
-```
-
-## Links
-
-- [Deployed App](https://photo-drop2.herokuapp.com/)
-- [Github Repo](https://github.com/MatteoThomas/photo-drop)
-
-## Technologies
-
-<!-- [![React](https://img.shields.io/badge/React-Technology_Used-000000?labelColor=d1d1d1&style=for-the-badge&logo=React&link=https://github.com/MatteoThomas/photo-drop)](https://github.com/MatteoThomas/photo-drop)
-[![GraphQL](https://img.shields.io/badge/GraphQL-Technology_Used-000000?labelColor=d1d1d1&style=for-the-badge&logo=GraphQL&link=https://github.com/MatteoThomas/photo-drop)](https://github.com/MatteoThomas/photo-drop)
-[![MongoDB](https://img.shields.io/badge/MongoDB-Technology_Used-000000?labelColor=d1d1d1&style=for-the-badge&logo=MongoDB&link=https://github.com/MatteoThomas/photo-drop)](https://github.com/MatteoThomas/photo-drop)
-[![Express](https://img.shields.io/badge/Express-Technology_Used-000000?labelColor=d1d1d1&style=for-the-badge&logo=Express&link=https://github.com/MatteoThomas/photo-drop)](https://github.com/MatteoThomas/photo-drop)
-[![Stripe](https://img.shields.io/badge/Stripe-Technology_Used-000000?labelColor=d1d1d1&style=for-the-badge&logo=Stripe&link=https://github.com/MatteoThomas/photo-drop)](https://github.com/MatteoThomas/photo-drop)
-[![Cloudinary](https://img.shields.io/badge/Cloudinary-Technology_Used-000000?labelColor=d1d1d1&style=for-the-badge&logo=Cloudinary&link=https://github.com/MatteoThomas/photo-drop)](https://github.com/MatteoThomas/photo-drop) -->
+# Technologies
 
 - React
 - MongoDB / Mongoose
@@ -63,14 +28,17 @@ When I upload an image, I can add a pin on Google Maps from the location the ima
 - GraphQL
 - Stripe $
 - Cloudinary
+# Future development
 
-## Status/Updates ![GitHub last commit](https://img.shields.io/github/last-commit/MatteoThomas/photo-drop)
+- Add tags to images
+- Searchable tags
+- When an image is clicked the photographer's information is displayed and the user can comment on the image
+- Mobile friendly
+- Donations through Stripe
+- Pin on Google Maps where the image was taken.
+- Uploaded images persist in Cloudinary
 
-> - Updated readme - Tues - Dec 7th, 2021
-> - Uploaded Initial Files - Thurs July 22, 2021
-> - Started Project - Tues July 20, 2021
-
-## Contributors
+# Contributors
 
 Matthew Elliott
 
@@ -92,6 +60,6 @@ Kendra Wing
 
 [![GitHub](https://img.shields.io/badge/GitHub-kwing25-green?style=social&logo=GitHub&link=https://github.com/kwing25)](https://github.com/kwing25)
 
-## License
+# License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
