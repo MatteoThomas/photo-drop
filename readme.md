@@ -29,10 +29,11 @@ upload images, search other user's images, tag photos with photography related t
 - Cloudinary
 - # Future development
 
+- Mobile friendly - completed 1/5/21
+- Optimize images for web 
 - Add tags to images
 - Searchable tags
 - When an image is clicked the photographer's information is displayed and the   user can comment on the image
-- Mobile friendly
 - Donations through Stripe
 - Pin on Google Maps where the image was taken.
 - Uploaded images persist in Cloudinary

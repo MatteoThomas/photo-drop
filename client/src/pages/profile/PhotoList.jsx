@@ -34,9 +34,9 @@ const Button = styled.div`
   color: antiquewhite;
   border-radius: 10px;
   padding: .5rem;
-  width: 100%;
+  width: 200px;
   text-align: center;
-  margin-top: 1rem;
+  margin: 1rem auto;
 
 `
 const Text = styled.div`

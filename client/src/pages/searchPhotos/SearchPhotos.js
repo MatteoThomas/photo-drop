@@ -30,7 +30,7 @@ const Container = styled.div`
 `;
 
 const Header = styled.div`
-  margin: 0 auto;
+  margin: 0 auto 1rem auto;
   font-family: var(--thin);
   font-size: clamp(4rem, 7vw, 8rem);
   color: rgb(240, 255, 255);
