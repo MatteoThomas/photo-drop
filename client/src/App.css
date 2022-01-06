@@ -5,17 +5,20 @@
 }
 
 body {
-  background-color: rgb(59, 64, 68);
-  color: rgb(231, 231, 231);
-  margin: 2rem;
+  /* background-color: rgb(59, 64, 68);
+  color: rgb(231, 231, 231); */
+  /* margin: 2rem; */
 }
 
-h2 {
+/* h2 {
   font-family: var(--thick);
   color: azure;
-}
+} */
 
-h3 {
+/* h3 {
   font-family: var(--thin);
   color: azure;
-}
+} */
+
+/* .home {
+} */

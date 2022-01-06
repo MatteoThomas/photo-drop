@@ -4,7 +4,7 @@ import { Image, Transformation } from "cloudinary-react";
 import { url } from "../../utils/CloudinaryService";
 import { CloudinaryContext } from "cloudinary-react";
 // import PhotoThumbnails from "./PhotoThumbnails";
-import "./styles.css";
+// import "./styles.css";
 class Photo extends Component {
   constructor(props) {
     super(props);

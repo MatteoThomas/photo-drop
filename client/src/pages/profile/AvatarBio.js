@@ -3,25 +3,35 @@ import avatar1 from "./avatar2.png";
 
 import { useQuery } from "@apollo/client";
 import { GET_ME } from "../../utils/queries";
+import styled from "styled-components";
+import { mobile } from "../../responsive";
+
+const Container = styled.div`
+  margin-top: 1rem;
+  width: 50%;
+  ${mobile({ width: "95%" })}
+`;
+
+const Text = styled.div`
+  margin-top: 1rem;
+`;
 
 const AvatarBio = () => {
   const { data } = useQuery(GET_ME);
   const userData = data?.me || [];
 
   return (
-    <div id="bio">
+    <Container>
       <div id="avatar">
         <img src={avatar1} alt="avatar" />
       </div>
-      <div id="text">
-        <h2>Bio</h2>
+      <Text>
         <h3>
-          Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-          impedit quo minus id quod maxime placeat facere possimus, omnis
-          voluptas assumenda est, omnis dolor repellendus.
+          I'm an OK photographer with a lot of passion. See my work and let me
+          know what you think, OK?
         </h3>
-      </div>
-    </div>
+      </Text>
+    </Container>
   );
 };
 

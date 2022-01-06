@@ -1,30 +1,68 @@
 import React from "react";
-import "./styles.css";
-import pic1 from "./crowd.jpg";
-import pic2 from "./field.jpg";
-import pic3 from "./donkey.jpg";
-import pic4 from "./street.jpg";
-import pic5 from "./apartment.jpg";
-import pic6 from "./temple.jpg";
+import styled from "styled-components";
+import { mobile } from "../../responsive";
+import { pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8 } from "./imgIndex";
 
-import pic8 from "./graves.jpg";
-import pic9 from "./trainplatform.jpg";
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* width: 100%; */
+`;
+
+const Img = styled.img`
+  min-height: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  margin: auto;
+  ${mobile({ maxHeight: "100%" })}
+`;
+
+const Header = styled.div`
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: var(--script);
+  font-size: clamp(5rem, 20vw, 12rem);
+  color: rgb(240, 255, 255);
+  letter-spacing: -0.5vw;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 1200px; */
+  ${mobile({ width: "400px", letterSpacing: "-1.2vw" })}
+`;
+
+const Span = styled.h1`
+  text-align: center;
+  font-family: var(--thick);
+  color: azure;
+  font-size: clamp(1rem, 3vw, 3rem);
+  letter-spacing: 0.3vw;
+  margin-top: -2vh;
+`;
 
 const Home = () => {
-  const album = [pic1, pic2, pic3, pic4, pic5, pic6, pic8, pic9];
+  const album = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8];
   const randomIndex = Math.floor(Math.random() * album.length);
   const picture = album[randomIndex];
 
+  var header = `Photo Drop!&nbsp;`;
   return (
-    <div className="container">
-      <div className="header">
-        Photo Drop!
-        <span>share, comment, inspire</span>
-      </div>
-      <div id="frame">
-        <img src={picture} />
-      </div>
-    </div>
+    <Container>
+      <Img src={picture} />
+      <Header>
+        Photo Drop!&nbsp;&nbsp;
+        <Span>share, comment, inspire</Span>
+      </Header>
+    </Container>
   );
 };
 

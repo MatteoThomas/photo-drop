@@ -6,7 +6,6 @@
 - [Description](#description)
 - [Links](#links)
 - [Technologies](#technologies)
-- [Future development](#future-development)
 - [Contributors](#contributors)
 - [License](#license)
 # Description
@@ -28,11 +27,11 @@ upload images, search other user's images, tag photos with photography related t
 - GraphQL
 - Stripe $
 - Cloudinary
-# Future development
+- # Future development
 
 - Add tags to images
 - Searchable tags
-- When an image is clicked the photographer's information is displayed and the user can comment on the image
+- When an image is clicked the photographer's information is displayed and the   user can comment on the image
 - Mobile friendly
 - Donations through Stripe
 - Pin on Google Maps where the image was taken.

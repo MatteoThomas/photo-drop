@@ -1,0 +1,124 @@
+:root {
+  --script: "Kaushan Script", cursive;
+  --thin: "Raleway", sans-serif;
+  --thick: "Nanum Gothic", sans-serif;
+}
+body {
+  background-color: rgb(59, 64, 68);
+  color: rgb(231, 231, 231);
+  margin: 2rem;
+}
+
+.card {
+  margin-top: 2rem;
+  color: azure;
+  background-color: rgb(59, 64, 68);
+  outline: none;
+  border: none;
+}
+
+.header {
+  margin-top: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+.container h1 {
+  text-align: center;
+  font-family: var(--thick);
+  font-size: 4rem;
+  color: rgb(240, 255, 255);
+  letter-spacing: 0rem;
+  margin: 2rem;
+}
+
+.searchContainer {
+  margin-top: -1.5rem;
+}
+
+.search input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  background-color: rgb(59, 64, 68);
+}
+
+.container button {
+  margin: 0;
+  float: right;
+  background: rgb(59, 64, 68);
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+h2 {
+  font-family: var(--thick);
+  color: azure;
+}
+
+h3 {
+  font-family: var(--thin);
+  color: azure;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  font-size: 2rem;
+  color: azure;
+  margin-top: 2rem;
+}
+
+.picContainer img {
+  display: inline;
+  margin: 1rem;
+  width: 8rem;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .picContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .picContainer img {
+    display: inline;
+    margin: 0.5rem;
+    width: 6rem;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  .results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95vw;
+  }
+
+  .container h1 {
+    text-align: center;
+    font-family: var(--thick);
+    font-size: 14vw;
+    color: rgb(240, 255, 255);
+    letter-spacing: 0rem;
+    margin: 2rem;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
